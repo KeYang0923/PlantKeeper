@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NewPlant</title>
+  <link type="text/css" rel="stylesheet" href="./css/newplant.css"/>
+    <script type="text/javascript" src="./js/myPlants.js"></script>
+    <script type="text/javascript" src="./js/newplant.js"></script>    
+</head>
+<body>
+<div class="whole">
+    <img src="http://tr1.cbsistatic.com/hub/i/2015/05/07/643199b8-f49a-11e4-940f-14feb5cc3d2a/f_katner_view_controllers.png"/>
+    <div class="content">
+      <div>><a href="mainmenu.html"><img id="returnArrow" class="mainButton" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-left-01-128.png"/></a></div>
+      <div class="detailTitle"><h2>Add a New Plant</h2></div>        
+        <div id="saveDiv" style="display:none;">
+          <h2 id="saveTitle">Save Confirmation</h2>
+          <h3 id="saveContent">Your new pet has been saved!</h3>      
+            <a href="mainmenu.html"><button type="button" class="saveBtn">OK</button></a>
+        </div>
+        
+      <div class="detailwrapper">
+	     <table>
+	<tbody>	
+	<tr>
+    <td><b>Name</b></td>
+		<td><input type="text" id="newName"></td>		
+	</tr>
+  <tr>
+  <td><b>Specie</b></td>
+		<td>
+             <select id="newSpecie">
+              <option selected disabled>Choose here</option>    
+              <option>Lily</option>
+              <option>Jasmine</option>
+              <option>Rose</option>
+              <option>Aster</option>
+              <option>Sunflower</option>
+              <option>Lilac</option>
+            </select>
+        </td>		
+	</tr>
+  <tr>
+  
+  <td>
+    <div class="addimageButton">  
+        <div class="uploadImage">
+            <input type="file" name="upload" onchange="loadImage()"/>
+        </div>          
+        <img id="addedImage" src="" />
+        
+    </div>
+    
+    <b>Add new image</b>
+  </td>
+				
+	</tr>	
+	
+  <tr>
+  <td>
+  <div class="saveimageButton">
+    <a href="#" id="savenewplant" onclick="validateInput();return false;"> 
+    <img id="saveIcon" src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/tick_green.png"/>         
+    </a>
+      
+    </div>
+  <b>Save change</b>
+  </td>			
+	</tr>
+  <tr>
+  <td>
+  <div class="deleteimageButton">
+    <a href="mainmenu.html"> 
+    <img id="deleteIcon" src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/close_red.png"/>
+    </a>
+    </div>
+  <b>Cancel</b>
+  </td>
+			
+	</tr>
+	</tbody>
+</table>
+      </div>
+     
+  </div>
+  <div class="bottomTitle">
+         <h3>Your Own Plant Nanny</h3>         
+  </div>
+</div>
+</body>
+</html>

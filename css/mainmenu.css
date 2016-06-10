@@ -1,0 +1,77 @@
+.whole{   
+    position:relative;           
+    margin-left:0px; 
+}
+.content{
+    position:absolute;
+    top:120px;
+    left:25px;
+}
+#addbutton{
+  width: 33px;
+  height: 33px;
+}
+.topbutton{
+  position:relative;
+  top: -57px;
+  left: 280px;  
+}
+#tablecontainer{
+  position:relative;
+  top: -63px; 
+  height: 395px;
+  width: 20em;
+  overflow-y: auto;
+}
+td{
+    width: auto;
+    padding: 0 0 0 15px;
+}
+.bottomTitle{
+  position:absolute;
+  top: 555px;
+  left: 90px;
+}
+#canlenderbutton{
+  width:50px;
+  height: 50px;
+}
+.canlender{
+  position:absolute;
+  top: 15px;
+  left: 230px; 
+}
+#helpIcon{
+  width:30px;
+  height:30px;
+  position: relative;
+  top:-45px;
+  left: 220px;
+}
+#detailName:hover{  
+  color:#FF9900;
+}
+.mainButton:hover{
+  width:60px;
+  height:60px;
+}
+h1{
+     color:#00CC66;
+    font-family: sans-serif;
+}
+.totaldiv{
+    display: table-cell;
+    vertical-align: middle;
+}
+span{
+    display: table-cell;
+    vertical-align: middle;
+}
+a{
+    display: table-cell;
+    text-decoration: none;
+    color: black;
+}
+.nameDiv{
+    font-size:20px;
+}

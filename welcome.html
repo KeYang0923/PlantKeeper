@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PlantKeeper</title>
+  <link type="text/css" rel="stylesheet" href="./css/welcome.css"/>  
+    <script type="text/javascript" src="./js/myPlants.js"></script>  
+    <script type="text/javascript" src="./js/welcome.js"></script>
+</head>
+<body>
+<div class="whole">
+    <img src="http://tr1.cbsistatic.com/hub/i/2015/05/07/643199b8-f49a-11e4-940f-14feb5cc3d2a/f_katner_view_controllers.png"/>
+    <div class="content">
+      <h1 id="title">Plant Keeper</h1>     
+        <a href="mainmenu.html" id="loadBtn" class="button">Go to app</a>
+    </div>
+    <button id="hiddenNotification" onclick="showNotification()"></button>
+    <script>
+        loadWaterReminder(data);
+        function showNotification(){
+            alert("Your pet Lily need to water today!");
+        }
+    </script>
+</div>
+</body>
+</html>

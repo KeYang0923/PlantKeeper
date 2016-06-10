@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PetDetails</title>
+  <link type="text/css" rel="stylesheet" href="./css/detail.css"/> 
+  <script type="text/javascript" src="./js/careResources.js"></script> 
+  <script type="text/javascript" src="./js/detail.js"></script>
+  
+</head>
+<body>
+<div class="whole">
+    <img src="http://tr1.cbsistatic.com/hub/i/2015/05/07/643199b8-f49a-11e4-940f-14feb5cc3d2a/f_katner_view_controllers.png"/>
+    <div class="content">
+      <div><a href="mainmenu.html"><img id="returnArrow" class="mainButton" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-left-01-128.png"/></a></div>
+      <div class="detailTitle"><h2>Current Pet Detail</h2></div>
+        <div id="saveDiv" style="display:none;">
+          <h2 id="saveTitle">Save Confirmation</h2>
+          <h3 id="saveContent">Change has been saved!</h3>      
+            <a href="mainmenu.html"><button type="button" class="saveBtn">OK</button></a>
+        </div>
+        <div id="deleteDiv" style="display:none;">
+          <h2 id="deleteTitle">Delete Confirmation</h2>
+          <h3 id="deleteContent">Are you sure to delete?</h3>      
+            <a href="mainmenu.html"><button type="button" class="deleteokBtn" onclick="deletePlant()">OK</button></a>
+            <a href="detail.html"><button type="button" class="deletenoBtn">Cancel</button></a>
+        </div>
+        
+      <div class="detailwrapper">
+	     <table>
+	<tbody>	
+	<tr>
+    <td><b>Name</b></td>
+		<td><input type="text" id="name" ></td>		
+	</tr>
+  <tr>
+  <td><b>Specie</b></td>
+		<td>
+        <select id="specie">
+          <option selected disabled>Choose here</option>    
+          <option>Lily</option>
+          <option>Jasmine</option>
+          <option>Rose</option>
+          <option>Aster</option>
+          <option>Sunflower</option>
+          <option>Lilac</option>
+        </select>
+      </td>		
+	</tr>
+  <tr>
+  
+  <td>
+    <div class="addimageButton">
+    <div class="uploadImage">
+            <input type="file" name="upload" onchange="loadImage()"/>
+        </div>          
+        <img id="addedImage" src=""/>
+    </div>
+    <b>Add new image</b>
+  </td>
+				
+	</tr>
+  <tr>
+  <td><b>Care Suggestions</b></td>
+  <td><a id="careTitle"></a></td>		
+	</tr>
+  <tr>
+  <td>
+  <div class="waterimageButton">
+    <a href="waterhistory.html" onclick="getWaterHistory()"><img id="waterIcon" src="https://cdn2.iconfinder.com/data/icons/oxygen/128x128/mimetypes/text-calendar.png"/></a>
+    </div>
+  <b>Watering History</b>
+  </td>
+			
+	</tr>
+  <tr>
+  <td>
+  <div class="saveimageButton">
+    <a href="#" id="updateplant" onclick="validateInput();return false;"> 
+        <img id="saveIcon" src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/tick_green.png"/>         
+    </a>
+    </div>
+  <b>Save change</b>
+  </td>			
+	</tr>
+  <tr>
+  <td>
+    
+  <div class="deleteimageButton">
+      <a href="#" id="deleteplant" onclick="showDelete()">
+        <img id="deleteIcon" src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/close_red.png"/>
+      </a>
+    </div>
+  <b>Delete</b>
+  </td>
+			
+	</tr>
+	</tbody>
+</table>
+    <script>
+         setDetail(careHtml);
+    </script>
+      </div>
+     
+  </div>
+  <div class="bottomTitle">
+         <h3>Your Own Plant Nanny</h3>         
+  </div>
+</div>
+</body>
+</html>

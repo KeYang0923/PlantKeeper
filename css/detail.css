@@ -1,0 +1,209 @@
+.whole{
+    position:relative;           
+    margin-left:0px; 
+}
+.content{
+    position:absolute;
+    top:120px;
+    left:25px;
+}
+
+.detailTitle{
+  position:relative;
+  left: 25px;  
+}
+h2{
+  color: #33CC33;
+}
+.detailwrapper{
+  position:relative;
+  width: 300px;
+  top: 1px;
+  left: 5px; 
+  height: 395px;
+  overflow-y: auto;
+}
+
+.bottomTitle{
+  position:absolute;
+  top: 555px;
+  left: 90px;
+}
+#returnArrow{
+  position:absolute;
+  top: 17px;
+  left: -2px;
+  width:30px;
+  height: 30px;
+}
+
+table { 
+    display: block; 
+    width: 293px;
+}
+td{
+    border: none;
+    width: 180px;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+		 
+}	
+	
+tr{ 
+    border: 1px solid #ccc; 
+    display: block;
+    width: 293px;
+    height: 40px;
+    padding-top: 10px;
+}
+#specie{
+    width:170px;    
+}
+.addimageButton{
+  position:absolute;
+  top:-3px;
+  left:150px;
+}
+div.uploadImage {
+    position:absolute;
+    top:-3px;
+    left:-5px;
+    width: 40px;
+    height: 40x;
+    background: url(../img/loadIcon.png);
+    overflow: hidden;
+}
+
+div.uploadImage input {
+    display: block !important;
+    width: 40px !important;
+    height: 40px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+#addedImage{
+    width:70px;
+    height: 45px;
+    position:absolute;
+    top:-6px;
+    left:60px;    
+}
+.saveimageButton{
+  position:absolute;
+  top:-3px;
+  left:150px;
+}
+#saveIcon{
+  width:30px;
+  height:30px;
+}
+.deleteimageButton{
+  position:absolute;
+  top:-3px;
+  left:150px;
+}
+#deleteIcon{
+  width:30px;
+  height:30px;
+}	
+.waterimageButton{
+  position:absolute;
+  top:-3px;
+  left:150px;
+}
+#waterIcon{
+  width:30px;
+  height:30px;
+}	
+#helpIcon{
+  width:30px;
+  height:30px;
+  position: relative;
+  top:-45px;
+  left: 220px;
+}
+
+.mainButton:hover{
+  width:60px;
+  height:60px;
+}
+#saveDiv {
+    margin:auto;
+    position:absolute;
+    top:150px;
+    left: 10px;
+    width: 300px;
+    height:150px;
+    z-index:2;
+    background-color: #99FFCC;
+}
+
+.saveBtn {
+    background: #CCCCCC;
+    color: #ffffff;
+    position: relative;
+    left: 140px;
+    padding: 8px 5px;
+    border: 0 none;
+} 
+.saveBtn:hover, .saveBtn:focus, .saveBtn:active{
+    background: #33a6cc;
+} 
+.saveBtn:active {
+    background: #007299;
+    box-shadow: none;
+}
+#saveTitle{
+  text-align: center;
+}
+#saveContent{
+  text-align: center;
+}
+#deleteDiv {
+    margin:auto;
+    position:absolute;
+    top:150px;
+    left: 10px;
+    width: 300px;
+    height:150px;
+    z-index:2;
+    background-color: #99FFCC;
+}
+.deleteokBtn {
+    background: #CCCCCC;
+    width: 90px;
+    color: #ffffff;
+    position: relative;
+    left: 50px;
+    padding: 8px 5px;
+    border: 0 none;
+} 
+.deleteokBtn:hover, .deleteokBtn:focus, .deleteokBtn:active{
+    background: #33a6cc;
+} 
+.deleteokBtn:active {
+    background: #007299;
+    box-shadow: none;
+}
+.deletenoBtn {
+    background: #CCCCCC;
+    width: 90px;
+    color: #ffffff;
+    position: relative;
+    left: 80px;
+    padding: 8px 5px;
+    border: 0 none;
+} 
+.deletenoBtn:hover, .deletenoBtn:focus, .deletenoBtn:active{
+    background: #33a6cc;
+} 
+.deletenoBtn:active {
+    background: #007299;
+    box-shadow: none;
+}
+#deleteTitle{
+  text-align: center;
+}
+#deleteContent{
+  text-align: center;
+}

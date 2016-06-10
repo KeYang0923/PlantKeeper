@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PlantKeeper</title>
+  <link type="text/css" rel="stylesheet" href="./css/mainmenu.css"/>  
+  <script type="text/javascript" src="./js/mainmenu.js"></script>
+    
+</head>
+<body>
+<div class="whole">
+    <img src="http://tr1.cbsistatic.com/hub/i/2015/05/07/643199b8-f49a-11e4-940f-14feb5cc3d2a/f_katner_view_controllers.png"/>
+    <div class="content">
+      <h1>PlantKeeper</h1>     
+    <div class="canlender">
+        <a href="calender.html">
+        <img id="canlenderbutton" class="mainButton" src="https://cdn3.iconfinder.com/data/icons/watchify-v1-0/70/clock-70px-128.png"/></a>
+    </div>        
+    <div class="topbutton">
+      <a href="newplant.html"><img id="addbutton" class="mainButton" src="https://cdn2.iconfinder.com/data/icons/bitsies/128/Add-128.png"/></a>
+    </div>
+    <div class="detailwrapper" id="tablecontainer"> 
+    </div>
+     <script>      
+         //load the data from json file acted as database
+         var readnew = localStorage.getItem("localdata");
+         readnew = JSON.parse(readnew);  
+         //dynamically generate the detail table
+         createPlantsTable(readnew);
+    </script>
+</div>
+<div class="bottomTitle">
+       <h3>Your Own Plant Nanny</h3>
+       <div><a href="help.html"><img id="helpIcon" class="mainButton" src="https://cdn4.iconfinder.com/data/icons/juicyfruit_by_salleedesign/128x128/help.png"></a></div>
+</div>
+</div>
+</body>
+</html>

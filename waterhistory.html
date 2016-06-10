@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RecentWateringHistory</title>
+  <link type="text/css" rel="stylesheet" href="./css/waterhistory.css"/>  
+  <script src="./js/jquery-1.10.2.js"></script>
+  <script src="./js/jquery-ui.js"></script> 
+  <script type="text/javascript" src="./js/waterhistory.js"></script>
+</head>
+<body>
+<div class="whole">
+    <img src="http://tr1.cbsistatic.com/hub/i/2015/05/07/643199b8-f49a-11e4-940f-14feb5cc3d2a/f_katner_view_controllers.png"/>
+    <div class="content">
+      <div><a href="detail.html"><img id="returnArrow" class="mainButton" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-left-01-128.png"/></a></div>
+        <div class="detailTitle"><h2><span id="curpetname"></span>'s Watering Schedule</h2></div>      
+        <div id="idDiv" style="display:none;">
+          <h2 id="idTitle">Add Watering Activity</h2>
+            <h3 id="idContent">New Watering Day <span id="newWaterDay"></span> added!</h3>      
+            <a href="waterhistory.html"><button type="button" class="idokBtn">OK</button></a>
+        </div>
+        
+        <div class="detailwrapper" id="datepicker"></div>         
+        <div class="colorInstruction">
+            <table style="width:100%">
+              <tr>
+                <td id="waterIcon"></td>
+                <td class="detailInstruction">Watering Day</td>    
+              </tr>              
+            </table>
+        </div>
+  </div>
+    <script>
+        showTitle();        
+    </script>
+  <div class="bottomTitle">
+         <h3>Your Own Plant Nanny</h3>         
+  </div>
+</div>
+</body>
+</html>
